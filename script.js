@@ -35,7 +35,7 @@ if (window.confirm("Got it! Click Ok if you would like to include uppercase lett
   promptUpper = []
 }
 
-if (window.confirm("Ok! Click Ok if you would like to include lowercase letters or Cancel if you don't.")){
+if (window.confirm("Noted! Click Ok if you would like to include lowercase letters or Cancel if you don't.")){
   promptLower= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
   } else {
   promptLower = []
