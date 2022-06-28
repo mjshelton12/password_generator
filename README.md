@@ -4,7 +4,7 @@
 
 * HTML - Used to build the site
 * CSS - Used to style the HTML
-* JavaScript - Used to create the functions that generate the password, including prompts and final password generation
+* JavaScript - Used to create the functions that generate the password, including prompts and randomization
 
 ## Live Site
 
@@ -18,6 +18,7 @@
 
 * Created function that was triggered when "Generate Password" button is clicked
 * The function triggered prompts that users can interact with
+* The prompts end the function if the user hits cancel on the prompt asking for character length
 * The function created an array based on what users choose
 * The function generates a password the length the user chose with random characters from the array the user built
 

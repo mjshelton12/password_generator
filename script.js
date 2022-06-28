@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 var putItAllTogether;
 var prompLengthNum;
 
-function generatePassword2(){
+function buildArray(){
 var promptLength = prompt("Enter password length. It must be at least 8 characters with a maximum of 128 character.")
 
 if (!promptLength) {
@@ -21,7 +21,6 @@ while (promptLengthNum < 8 || promptLengthNum > 128) {
   if (!promptLength) {
     return;
   }
-
 }
 
 if (window.confirm("Click Ok if you would like to include special characters (!@#$%^&*()) or Cancel if you don't.")){
@@ -50,7 +49,7 @@ if (window.confirm("Click Ok if you would like to include lowercase letters or C
 
 putItAllTogether = promptSpecial.concat(promptNumbers, promptUpper, promptLower)
 
-if (putItAllTogether.length == 0) {
+if (putItAllTogether.length === 0) {
   window.alert ("Could not create password with no character sets selected. Please try again.")
   putItAllTogether = [""]
 }
@@ -61,7 +60,7 @@ if (putItAllTogether != 0)
 }
 
 function generatePassword(){
-  generatePassword2()
+  buildArray()
   var prePassword = ""
   for (i=0; i<promptLengthNum; i++){
   prePassword += putItAllTogether[Math.floor(Math.random()*putItAllTogether.length)]
@@ -81,5 +80,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword)
-
-
