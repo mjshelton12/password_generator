@@ -4,7 +4,7 @@
 
 * HTML - Used to build the site
 * CSS - Used to style the HTML
-* JavaScript - Used to create the functions that generate the password, including prompts and  
+* JavaScript - Used to create the functions that generate the password, including prompts and final password generation
 
 ## Live Site
 
